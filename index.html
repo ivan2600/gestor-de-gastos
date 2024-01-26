@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de gastos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestor de gastos</h1>
+  <label for="select-user">Selecciona un usuario:</label>
+  <select id="select-user" name="select-user">
+      <option value="usuario-1">Usuario 1</option>
+      <option value="usuario-2">Usuario 2</option>
+      <option value="usuario-3">Usuario 3</option>
+      <option value="usuario-4">Usuario 4</option>
+  </select>
+  <input id="input_nombre-gasto" type="text" placeholder="nombre del gasto">
+  <input type="number" name="monto" id="monto" placeholder="monto">
+  <input type="submit" value="grabar" id="submit">
+  <h2>muestra</h2>
+  <div class="resultado">
+    
+  </div>
+  <h2>total</h2>
+  <div class="total"></div>
+
+  <script src="./main.js"></script>
+</body>
+</html>

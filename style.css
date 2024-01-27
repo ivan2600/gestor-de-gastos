@@ -41,6 +41,7 @@ h1 {
   padding: 0 10px;
   border-radius: 8px;
   border: none;
+  font-family: 'Outfit', sans-serif;
 }
 
 #submit {
@@ -49,4 +50,5 @@ h1 {
 
 #formulario {
   display: grid;
+  margin: 0 auto;
 }

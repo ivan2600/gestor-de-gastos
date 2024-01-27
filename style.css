@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Orange: hsl(35, 100%, 50%);
+  /*main BG*/
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  /*card BG*/
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  /*line*/
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--Very-dark-blue-main);
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: var(--Orange);
+}
+
+.main__input {
+  width: 20rem;
+  height: 3rem;
+  margin: 0.3rem;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+#submit {
+  background-color: var(--Orange);
+}
+
+#formulario {
+  display: grid;
+}

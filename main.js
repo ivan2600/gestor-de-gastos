@@ -5,13 +5,12 @@ const submit = document.getElementById('submit');
 const resultado = document.querySelector('.resultado');
 const total = document.querySelector('.total');
 const gastos = [];
-let arrayDeGastos = [];
-let sumaDeGastos = 1;
+let sumaDeGastos = 0;
 
 submit.addEventListener('click', ()=>{
 
   const result = document.createElement('p');
-  result.textContent = `${selectUser.value}--${nombreDelGasto.value}--$${monto.value}`;
+  result.textContent = `${selectUser.value}--${nombreDelGasto.value}--$ ${monto.value}`;
   resultado.appendChild(result);
 
   const nuevoGasto = {
@@ -21,17 +20,13 @@ submit.addEventListener('click', ()=>{
   }
 
   gastos.push(nuevoGasto);
-
-  arrayDeGastos.push(nuevoGasto.monto)
-  console.log(arrayDeGastos);
   
-  for (let i = 0; i < arrayDeGastos.length; i++) {
-    sumaDeGastos =+ arrayDeGastos[i];
-    console.log('array:'+ sumaDeGastos);
-  }
+  sumaDeGastos += Number(nuevoGasto.monto);
   
-  total.innerHTML = sumaDeGastos;
+  total.innerHTML = "$ " + sumaDeGastos;
 
   console.log('suma de gastos ' + sumaDeGastos);
+
+  document.getElementById("formulario").reset();
 })
 
